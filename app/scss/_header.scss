@@ -1,0 +1,88 @@
+.header {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .leftBar {
+      display: flex;
+      gap: 110px;
+
+      .logotype {
+        margin-top: 9px;
+
+        img {
+          width: 163px;
+
+          @media (max-width: 500px) {
+            width: 120px;
+          }
+        }
+      }
+
+      .navigation {
+        ul {
+          display: flex;
+          gap: 20px;
+
+          li {
+            padding: 67px 14px 8px 14px;
+            border-radius: 0 0 5px 5px;
+
+            a {
+              color: #163561;
+              font-weight: 500;
+              line-height: 133.6%;
+            }
+
+            &:hover {
+              background-color: #fbb400;
+              a {
+                color: #FFF;
+              }
+            }
+          }
+
+          .linkActive {
+            background-color: #A3C1EF;
+
+            a {
+              color: #FFF;
+            }
+          }
+        }
+
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+
+    }
+
+    .rightBar {
+      margin-top: 46px;
+      display: flex;
+      align-items: center;
+      gap: 72px;
+
+      img {
+        min-width: 42px;
+      }
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    .burger {
+      display: none;
+      width: 42px;
+      height: 42px;
+      align-self: center;
+      cursor: pointer;
+
+      @media (max-width: 1200px) {
+        display: flex;
+      }
+    }
+  }
+}

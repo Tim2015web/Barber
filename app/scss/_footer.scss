@@ -1,0 +1,81 @@
+.footer {
+  padding: 85px 0 98px 0;
+  position: relative;
+
+  @media (max-width: 500px) {
+    padding: 60px 0;
+  }
+
+  .wrapper {
+    display: grid;
+    justify-content: center;
+    gap: 36px;
+
+    .logotype {
+      margin: 0 auto;
+    }
+
+    p {
+      max-width: 526px;
+      color: #153461;
+      text-align: center;
+      font-weight: 400;
+      line-height: 150.6%;
+      letter-spacing: 0.75px;
+      opacity: 0.65;
+
+      @media (max-width: 500px) {
+        font-size: 22px;
+      }
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+
+      svg {
+        &:hover {
+
+          cursor: pointer;
+
+          circle {
+            fill: #99BAED;
+          }
+        }
+      }
+    }
+
+    hr {
+      width: 100%;
+      height: 1px;
+      background: #99BAED;
+    }
+  }
+
+  .leftCorner {
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+    width: 15%;
+    height: 100%;
+    background-image: url(../images/b-l-c.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    z-index: -1;
+  }
+
+  .rightCorner {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 15%;
+    height: 100%;
+    background-image: url(../images/b-r-c.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    z-index: -1;
+  }
+}
