@@ -1,4 +1,4 @@
-# Barber
+# Layouts - Barber
 
 [Показать проект](https://tim2015web.github.io/Barber/)
 
